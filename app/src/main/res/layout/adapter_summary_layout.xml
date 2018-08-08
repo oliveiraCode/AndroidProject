@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="8dp"
+        android:text="Question: "
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="19dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/textViewIdQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="idQ"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="19dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewQuestion"
+        app:layout_constraintBaseline_toBaselineOf="@id/textViewQuestion"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/attention_icon"
+        app:layout_constraintBottom_toBottomOf="@id/textViewIdQ"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="35dp"
+        />
+
+</android.support.constraint.ConstraintLayout>
